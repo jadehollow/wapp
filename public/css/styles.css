@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    color: lightblue;
+    font-family: 'Gowun Dodum', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold ;
+}
+
+.app-icon {
+    width: 100px;
+    height: 100px;
+}
+
+#menu-button {
+    border-color: #791eff;
+}
+
+.weather-info, .about-info {
+    padding-top: 50px;
+}
+
+/* About page h2 div */
+.h2about {
+    width: 50%;
+    margin: 0 auto 0 auto;
+    position: relative;
+}
+
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    .h2about {
+      width: 90%;
+    }
+}
+
+/* Footer */
+footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Links */
+.footer-link, .api-link {
+    color: #791eff;
+    text-decoration: none;
+}
+
+.footer-link:hover, .api-link:hover {
+    color: #ec6e4c;
+}
