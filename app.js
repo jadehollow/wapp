@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const request = require("request");
-require("dotenv");
+require('dotenv').config();
 
 
 app.use(express.urlencoded({ extended: true }));
@@ -36,8 +36,10 @@ app.post("/", (req, res) => {
  
     let location = capitalize(req.body.cityName);
     const apiKey = process.env.API_KEY;
+    console.log(apiKey)
     const unit = "imperial";
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=${unit}`;
+    console.log(url)
 
     request(url, function (err, response, body) {
         if (err) {
