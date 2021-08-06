@@ -33,7 +33,7 @@ app.post("/", (req, res) => {
 
         return arrOfWordsCased.join(" ");
     }
-
+ 
     let location = capitalize(req.body.cityName);
     const apiKey = process.env.API_KEY;
     const unit = "imperial";
