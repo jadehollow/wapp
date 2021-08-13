@@ -4,4 +4,4 @@ Wapp (your friendly neighborhood weather application) was built using NodeJS and
 
 ## Try it out
 
-You can use the app here: https://heroku-wapp.herokuapp.com/
+You can use the app [here](https://heroku-wapp.herokuapp.com/).
